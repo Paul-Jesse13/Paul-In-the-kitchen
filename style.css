@@ -267,10 +267,8 @@ nav img{
     display: none;
 }
 @media only screen and (max-width: 600px){
-    body{
-        width: 100vh;
-        background: radial-gradient( #3a3a3a, #000) ;
-        
+   body{
+       
     }
     .flex-div{
         display: flex;
