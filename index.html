@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paul Jr WebDEV</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="content">
+                <nav class="flex-div">
+                    <div class="nav-left flex-div">
+                        <div class="logo">
+                         <a href="#home"><h1>PA<br>UL</h1></a>   
+                        </div>
+                    </div>
+            
+                    <div class="nav-right flex-div">
+                        <ul id="sidemenu">
+                            <!-- <li class=""><a href="#home">Home</a></li> -->
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#services">Contact</a></li>
+                        <img src="Images/menu.png"  onclick="closemenu()" >
+
+                        </ul>
+                       
+                    </div>
+                    <img src="Images/menu.png" class="img1" onclick="openmenu()">
+                </nav>
+        
+        
+        <!------------home----------------->
+        <div id="home">
+            <div class="container">
+                <div class="header-text">
+                    <p class="first">I am</p>
+                    <h1>PAUL</h1>
+                    <p class="second">A Junior<br>web Developer</p>
+                </div>
+            </div>
+                
+        </div>
+        
+
+        <!----------------products-------------->
+        <div id="products">
+            <div class="container">
+                <div class="product-image">
+                    <img src="Images/Rectangle 13.png" class="food1">
+                    <img src="Images/Rectangle 15.png" class="food2">
+                    <img src="Images/Rectangle 16.png" class="food3">
+                </div>
+                <div class="product-text">
+                    <h2>In the Kitchen</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Asperiores ea ipsum nostrum ex, molestias omnis similique natus,
+                        ullam ducimus placeat nihil vitae tenetur, maiores eius.
+                    </p>
+                </div>
+
+                
+                <a href="#"><button class="btn">View Product</button></a>
+            </div>
+        </div>
+
+
+        <!-----------------Services----------->
+            <div id="services">
+                <div class="container2">
+                    <div class="contact-area">
+                         <div class="contact-right">
+                                    
+        
+                           <h1>Contact</h1>
+                           <p></p>
+                           <h3>Address</h3>
+                           <p>Remote</p>
+                           <h3>Phone</h3>
+                           <p>+234 705 845 4307</p>
+                           <h3>E-mail</h3>
+                           <p>pauljesseeloke@gmail.com</p>
+                        </div>
+
+                        <div class="contact-left">
+                            <h1>Contact Form</h1>
+        
+                            <form action="">
+                                
+                                    <div class="input-area">
+                                        <label for="">Name</label>
+                                        <input type="text" placeholder="Paul Jesse" id="">
+                                    </div>
+        
+                                    <div class="input-area">
+                                        <label for="">Phone</label>
+                                        <input type="number" placeholder="+234 705 845 4307" id="">
+                                    </div>
+                            
+        
+                                
+                                    <div class="input-area">
+                                        <label for="">Email</label>
+                                        <input type="email" placeholder="pauljesseeloke@gmail.com" id="">
+                                    </div>
+        
+                                    <div class="input-area">
+                                        <label for="">Topic</label>
+                                        <input type="text" placeholder="Your Message" id="">
+                                    </div>
+                            
+        
+                               
+        
+                                <button type="submit" class="btn2">Send</button>
+                            </form>
+        
+        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>
